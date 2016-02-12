@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Promises</title>
+</head>
+<body>
+
+    <p>Hello, promises interview question!</p>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        
+        (function fnAdvancedQuestion() {
+
+            $.get('http://localhost:3000').then(function fnConsoleLog1() {
+                console.log(1);
+                
+            }).then(function fnConsoleLog2() {
+
+                var $deferred = $.Deferred();
+
+                setTimeout(function fnSetTimeout() {
+                    console.log(2);
+                    $deferred.resolve();
+                }, 1000);
+
+                return $deferred.promise();
+
+            }).then(function fnConsoleLog3() {
+
+                var $deferred = $.Deferred();
+
+                setTimeout(function fnSetTimeout() {
+                    console.log(3);
+                    $deferred.resolve();
+                }, 0);
+
+                return $deferred.promise();
+
+            }).done(function fnConsoleLog4() {
+                console.log(4);
+            });
+
+        })();
+
+    </script>
+
+    
+</body>
+</html>
