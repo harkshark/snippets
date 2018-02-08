@@ -13,10 +13,10 @@ parse_git_branch() {
 export EDITOR="subl -w"
 
 # Prompt
-#export PS1="🌱 \[\e[36m\]\u\[\e[m\]\[\e[36m\]:\[\e[m\]\[\e[36m\]\W\[\e[m\] \[\e[36m\]\\$\[\e[m\] "
+export PS1="🌱 \[\e[36m\]\u\[\e[m\]\[\e[36m\]:\[\e[m\]\[\e[36m\]\W\[\e[m\] \[\e[36m\]\\$\[\e[m\] "
 
 # Prompt with Git Branch
-export PS1="🌱 \[\e[36m\]\u:\W\[\e[m\]\[\e[37m\]$(parse_git_branch)\[\e[m\] $ "
+# export PS1="🌱 \[\e[36m\]\u:\W\[\e[m\]\[\e[37m\]$(parse_git_branch)\[\e[m\] $ "
 
 # Git Bash Prompt
 # https://github.com/magicmonty/bash-git-prompt
