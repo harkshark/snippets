@@ -36,9 +36,9 @@ GIT_PROMPT_ONLY_IN_REPO=1                 # only use when in a Git repository
 # GIT_PROMPT_START=...            # uncomment for custom prompt start sequence
 # GIT_PROMPT_END=...              # uncomment for custom prompt end sequence
 
-# GIT_PROMPT_THEME=Custom         # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
+GIT_PROMPT_THEME=Custom           # use custom theme specified in file GIT_PROMPT_THEME_FILE (default ~/.git-prompt-colors.sh)
 # GIT_PROMPT_THEME_FILE=~/.git-prompt-colors.sh
-GIT_PROMPT_THEME=Solarized        # use theme optimized for solarized color scheme
+# GIT_PROMPT_THEME=Single_line_Solarized          # use theme optimized for solarized color scheme
 
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
